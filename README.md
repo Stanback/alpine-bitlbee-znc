@@ -24,17 +24,6 @@ The Docker image for Bitlbee that is part of this project includes
 additional packages for Facebook chat and OTR that you may optionally
 use.
 
-### Building Docker Image
-
-In the `bitlbee/` directory of this repository, run:
-
-```
-docker build \
-  --rm=true \
-  --tag=bitlbee \
-  .
-```
-
 ### Starting
 
 Create a directory for storing your user `data/`, then run:
@@ -46,7 +35,7 @@ docker run \
   -v $PWD/data:/var/lib/bitlbee:rw \
   --name=bitlbee \
   --restart=always \
-  bitlbee
+  stanback/alpine-bitlbee
 ```
 
 ### Configuring
@@ -82,17 +71,6 @@ The Docker image for ZNC that is part of this project includes additional
 3rd party modules for push notifications with the Palaver iOS client (below),
 partial message buffer playback, and separate buffers for your differnet clients.
 
-### Building Docker Image
-
-In the `znc/` directory of this repository, run:
-
-```
-docker build \
-  --rm=true \
-  --tag=znc \
-  .
-```
-
 ### Configuring ZNC
 
 Create a directory for storing your `data/`, then run:
@@ -102,7 +80,7 @@ docker run \
   -it \
   --rm=true \
   -v $PWD/data:/var/lib/znc \
-  znc --makeconf
+  stanback/alpine-znc --makeconf
 ```
 
 ### Starting
@@ -122,7 +100,7 @@ docker run \
   --name=znc \
   --restart=always \
   --link=bitlbee:bitlbee \
-  znc
+  stanback/alpine-znc
 ```
 
 ### Commands Quickstart
