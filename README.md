@@ -1,5 +1,3 @@
-In progress :bomb:
-
 # Docker-based Chat Gateway (Alpine Linux + Bitlbee + ZNC)
 
 This project is a combination of an IM to IRC service (Bitlbee) and
@@ -108,6 +106,8 @@ docker run \
 TODO: Setup user, add network for Bitlbee, load and configure modules
 
 ## Client Recommendations
+
+TODO: Add more details
 
 ### OSX
 
