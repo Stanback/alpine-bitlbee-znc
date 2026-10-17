@@ -1,3 +1,11 @@
+> **Archived — October 16, 2026**
+>
+> This historical BitlBee/ZNC configuration is preserved as a reference. Its build, integrations, and client guidance are no longer maintained.
+>
+> Source and history remain available for reference; no further updates or support are planned.
+
+---
+
 # Docker-based Chat Gateway (Alpine Linux + Bitlbee + ZNC)
 
 This project is a combination of an IM to IRC service (Bitlbee) and
